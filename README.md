@@ -14,8 +14,9 @@ I would like you to investigate how the value of the variance  changes as the nu
 You then need to write the internals of the loop that I have started to set the variables `xvals` and `yvals`:
 
 1. The first element of `xvals` should be set equal to 1, the second element should be set to two and so on.
-2. The first element of `yvals` should be set equal to an estimate of the variance for a sample mean computed from one random variable, the second element should be set equal to an estimate of the sample variance for a sample mean computed from two random variables, the third element should be set equal to an estimate of the sample variance for a sample mean computed from three random variables.  This process should be continued until you have an estimate of the sample variance for a sample mean computed from 200 random variables.
+2. The first element of `yvals` should be set equal to an estimate of the variance for a sample mean computed from one random variable, the second element should be set equal to an estimate of the sample variance for a sample mean computed from two random variables, the third element should be set equal to an estimate of the sample variance for a sample mean computed from three random variables.  This process should be continued until you have an estimate of the sample variance for a sample mean computed from 50 random variables.
 
 All your estimates for the sample variance should be computed from 10 random variables.  
 
-When you have completed the exercise you should have a graph showing how the variance of the sample mean decreases as you compute the sample mean from more random variables.
+You should plot a graph showing your values for the sample variance on the y-axis and the number of random variables that were added together to compute the mean on the x-axis.  The label 
+for the x-axis should be "Number of variables used to calculate mean" and the y-axis label should be "Variance"

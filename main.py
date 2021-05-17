@@ -11,14 +11,9 @@ def variance(n,m) :
   # sample means, which are each computed from m 
   # uniform random variables between 0 and 1 goes here.
   
-xvals, yvals = np.zeros(200), np.zeros(200) 
-for i in range(200) : 
+xvals, yvals = np.zeros(50), np.zeros(50) 
+for i in range(50) : 
   # Your code to set xvals and yvals as described in the panel
   # on the right goes here
   
 
-# You shouldn't need to modify the code from here onwards
-plt.plot( xvals, yvals, 'ko' )
-plt.xlabel("Number of variables used to calculate mean")
-plt.ylabel("Variance")
-plt.savefig("variance_change.png")
