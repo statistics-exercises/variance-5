@@ -4,8 +4,9 @@ In this exercise I want you to calculate the variance of the sample mean:
 
 ![](https://render.githubusercontent.com/render/math?math=\textrm{var}(X)=\frac{n}{n-1}\left[\frac{1}{n}\sum_{i=1}^{n}\left(\frac{1}{m}\sum_{j=1}^{m}X_{ij}\right)^2-\left(\frac{1}{n}\sum_{i=1}^n\frac{1}{m}\sum_{j=1}^mX_{ij}\right)^2\right])
 
+In the expression above each of the X_ij values is a uniform continuous random variable that lies between 0 and 1.  The sums over j are thus simply calculations of the sample mean.  The sample variance is thus calculated from n estimates fo teh sample mean.
 
-In this exercise, we are going to investigate how this quantity varies as the number of variables that were used in the calculation of __the sample mean__ changes.  As in the previous exercise, you will need to complete the two functions:
+I would like you to investigate how the value of the variance  changes as the number of variables (i.e. m) that were used in the calculation of __the sample mean__ changes.  As in the previous exercise, you will need to complete the two functions:
 
 1.  `sample_mean` - takes a single integer `m` in input.  It should return a sample mean that is computed by generating `m` uniform random variables that lie between 0 and 1.
 2. `variance` - takes two integers in input `m` and `n`.  This function should return an estimate of the variance for a sample mean computed from `m` uniform random variables that lie between 0 and 1.  This variance should be calculated by generating `n` estimates of the sample mean.
