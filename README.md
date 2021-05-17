@@ -1,6 +1,8 @@
 # Variance of mean
 
-In the previous exercise you wrote code to calculate the variance of the sample mean:
+In this exercise I want you to calculate the variance of the sample mean: 
+
+![](https://render.githubusercontent.com/render/math?math=\textrm{var}(X)=\frac{n}{n-1}\left[\frac{1}{n}\sum_{i=1}^n\left(\frac{1}{m}\sum_{j=1}^mX_{ij}\right)^2-\left(\frac{1}{n}\sum_{i=1}^n\frac{1}{m}\sum_{j=1}^mX_{ij}\right)^2\right]
 
 
 In this exercise, we are going to investigate how this quantity varies as the number of variables that were used in the calculation of __the sample mean__ changes.  As in the previous exercise, you will need to complete the two functions:
