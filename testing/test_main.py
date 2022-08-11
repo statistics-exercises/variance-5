@@ -12,9 +12,12 @@ from AutoFeedback.randomclass import randomvar
 import unittest
 from main import *
 
-x, y = np.linspace(1,50,50), []
+x, expect, variance, isi = np.linspace(1,50,50), np.zeros(50), np.zeros(50), []
 for i in range(50) : 
-    var = randomvar( 0.5, variance=1/12/(i+1), dist="chi2", isinteger=False ) 
+    expect[i], variance[i] = 0.5, 1/12/(i+1)
+    isi.append(False)
+
+y = randomvar( expect, variance=variance, dist="chi2", dof=9, isinteger=isi )
 line1=line( x, y )
 
 axislabels=["Number of variables used to calculate mean", "Variance"]
