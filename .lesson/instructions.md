@@ -2,9 +2,7 @@
 
 In this exercise I want you to calculate the variance of the sample mean: 
 
-$$
-\textrm{var}(X)=\frac{n}{n-1}\left[\frac{1}{n}\sum_{i=1}^{n}\left(\frac{1}{m}\sum_{j=1}^{m}X_{ij}\right)^2-\left(\frac{1}{n}\sum_{i=1}^n\frac{1}{m}\sum_{j=1}^mX_{ij}\right)^2\right]
-$$
+![](equation.png)
 
 In the expression above each of the X_ij values is a uniform continuous random variable that lies between 0 and 1.  The sums over j are thus simply calculations of the sample mean.  The sample variance is thus calculated from n estimates fo teh sample mean.
 
